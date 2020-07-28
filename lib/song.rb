@@ -1,3 +1,4 @@
+require 'pry'
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -54,6 +55,7 @@ class Song
     song.name = result.name
     song.artist_name = result.artist_name
     song
+    binding.pry
   end
   
   def self.destroy_all
